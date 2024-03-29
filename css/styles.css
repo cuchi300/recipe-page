@@ -1,0 +1,126 @@
+:root{
+    --fuentePrincipal: "Outfit", sans-serif;
+    --fuenteHeading: "Young Serif", serif;
+
+    /* Colores primario */
+    --primario-uno: hsl(14, 45%, 36%);
+    --primario-dos: hsl(332, 51%, 32%);
+
+    /* Colores neutrales */
+    --blanco: hsl(0, 0%, 100%);
+    --blanco-rosa: hsl(330, 100%, 98%);
+    --naranja-shell: hsl(30, 54%, 90%);
+    --gris-claro: hsl(30, 18%, 87%);
+    --gris-oscuro: hsl(30, 10%, 34%);
+    --negro: hsl(24, 5%, 18%);
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuentePrincipal);
+    line-height: 1.4;
+    color: var(--negro);
+    background-color: var(--naranja-shell);
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3rem;
+    color: var(--primario-dos);
+}
+h3{
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--primario-dos);
+}
+@media (min-width: 768px) {
+    
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+ol,ul{
+    font-weight: 900;
+    color: var(--primario-dos);
+}
+li{
+    margin-bottom: 1rem;
+}
+p{
+    font-weight: 400;
+    color: var(--negro);
+}
+span{
+    color: var(--negro);
+}
+@media (min-width: 768px) {
+    .contenedor{
+        max-width: 50%;
+        background-color: var(--blanco);
+        padding: 3rem;
+        border-radius: 2rem;
+        margin: 10rem auto;
+    }
+}
+.weight{
+    font-weight: 700;
+}
+.attribution{
+    text-align: center;
+    margin: 2rem 0;
+}
+.contenido{
+    padding: 2rem;
+}
+.preparacion{
+    padding: 2rem;
+    background-color: var(--blanco-rosa);
+    border-radius: 1rem;
+}
+.preparacion ul{
+    padding-left: 2rem;
+}
+.calorias{
+    display: flex;
+    gap: 5rem;
+    font-weight: 400;
+    border-bottom: 1px solid #8b8888;
+    padding-bottom: 2rem;
+    list-style: none;
+    padding-left: 3rem;
+}
+.nombre{
+    flex-basis: 8rem;
+}
+.numero{
+    font-weight: 900;
+    color: var(--primario-dos);
+}
+.ingredientes ul {
+    padding-left: 2rem;
+}
+.instrucciones ol {
+    padding-left: 2rem;
+}
+.nutricion ul{
+    padding: 0;
+}
+
+
+
