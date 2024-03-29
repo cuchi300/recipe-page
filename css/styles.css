@@ -52,6 +52,11 @@ img{
     max-width: 100%;
     height: auto;
 }
+@media (min-width: 768px) {
+    img{
+        border-radius: 1rem;
+    }
+}
 a{
     text-decoration: none;
 }
